@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+    background-color: rgba(190, 33, 33);
+    color: #333232;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 50px;
+    transition: 0.2s ease-in-out;
+
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    background-color: rgb(145, 138, 138);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: #333232;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+
+}
+
+main .cartao-pokemon:hover {
+    background-color: #ffffff;
+
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #333232;
+    color: #333232;
+}
+
+main .cartao-pokemon .informacoes span {
+    display: inline-flex;
+    justify-content: space-between;
+    border: 1px solid #333232;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 3px;
+}
+
+main .cartao-pokemon .gif {
+    width: 70px;
+    height: 70px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.voador {
+    background-color: #a1dff1;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inceto {
+    background-color: #a6b91a;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
